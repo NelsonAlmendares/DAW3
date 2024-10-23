@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  margin: 20px;
+}
+
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select, input[type="number"], input[type="text"] {
+  padding: 5px;
+  font-size: 1em;
+  width: 200px;
+}
+
+input[type="text"] {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 15px;
+}

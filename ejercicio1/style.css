@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+#menu li a:hover {
+    color: #66ccff;
+}
+
+#menu li a.active {
+    color: #66ccff;
+}
+
+.section {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+
+.section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #666;
+}
+
+.text-white {
+    color: #fff !important;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-title_anime {
+    color: #fff !important;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+}
+
+.text_anime {
+    color: #fff !important;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.img_wave {
+    height: 190px;
+ }
+
+ .img-spidey {
+    height: 330px;
+ }
+
+.img-fade {
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 15%,
+        black 95%,
+        transparent
+    ),
+    linear-gradient(
+        to bottom,
+        transparent,
+        black 15%,
+        black 95%,
+        transparent
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 15%,
+        black 95%,
+        transparent
+    ),
+    linear-gradient(
+        to bottom,
+        transparent,
+        black 15%,
+        black 95%,
+        transparent
+    );
+    -webkit-mask-composite: intersect;
+    mask-composite: intersect;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#inicio { background-color: #FBC124; }
+#Anime { background-color: #252625; }
+#Manga { background-color: #FDFDFD; }
+#Comics { background-color: #ced4da; }

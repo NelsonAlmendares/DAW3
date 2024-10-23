@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio FullPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.css">    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a data-menuanchor="inicio" href="#inicio">Inicio</a></li>
+            <li><a data-menuanchor="Anime" href="#Anime">Anime</a></li>
+            <li><a data-menuanchor="Manga" href="#Manga">Manga</a></li>
+            <li><a data-menuanchor="Comics" href="#Comics">Comics</a></li>
+        </ul>
+    </nav>
+
+    <div id="fullpage">
+        <div class="section" id="inicio">
+            <img src="https://media.tenor.com/KUgeaCbSEZAAAAAi/pikachu-pokemon.gif" class="img_wave"  alt="" srcset="">
+            <h1 class="text_whtie_">Bienvenidos a Mi Sitio</h1>
+            <!-- <img src="https://media.tenor.com/4K2_dLLq-pwAAAAi/charmander-chases-tail.gif" alt=""> -->
+            <img src="https://media.tenor.com/Zu88f9GsbzYAAAAi/charizard-dance.gif" alt="">
+            <p>.</p>
+        </div>
+
+        <div class="section" id="Anime">
+            <h1 class="text-white">Death Note</h1>
+            <div class="content">
+                <div class="col-md-6">
+                    <img src="./img/death-note.gif" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-title_anime">Historia</h4>
+                    <p class="text_anime">
+                        La historia de Death Note gira en torno a un estudiante de secundaria llamado Light Yagami, quien encuentra una libreta sobrenatural que le 
+                        permite matar a cualquier persona cuyo nombre escriba en él. Light decide utilizar la libreta para eliminar a los criminales y crear un mundo 
+                        sin maldad. 
+                        La historia comienza cuando Light encuentra la libreta en el patio de su colegio y, tras probar su poder, decide eliminar a criminales para crear 
+                        un "nuevo mundo" sin maldad. Sin embargo, sus asesinatos acaban siendo calificados por la gente de Japón como obra de "Kira". 
+                        La policía internacional y el detective "L" investigan al asesino en serie, mientras que Light oculta la libreta. Light se da cuenta de que L se 
+                        vuelve su rival y empieza una carrera entre los dos para probar su superioridad mental. 
+                        Death Note es una historia que trata sobre el poder sobre la vida y la muerte, y demuestra que el poder absoluto corrompe.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="Manga">
+            <h1 class="text-white">Naruto</h1>
+            <div class="content">
+                <div class="col-md-6">
+                    <img src="https://media1.tenor.com/m/39NBAKz8M-kAAAAC/naruto-boing-rhyesea.gif" class="img-fade" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4>Historia</h4>
+                    <p>
+                        Naruto es un joven ninja de la aldea ficticia de Konoha. Con un espíritu indomable y una determinación inquebrantable, Naruto sueña con convertirse en el Hokage, el líder de su aldea. Su viaje está lleno de desafíos, pero nunca deja que los obstáculos se interpongan en su camino.
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="Comics">            
+            <div class="content">
+                <div class="col-md-6">                    
+                    <img src="https://media.tenor.com/_Q1ixRUfvZYAAAAi/manimarcus.gif" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h4 >Historia</h4>
+                    <p class="">
+                        Peter Parker es un adolescente como otro cualquiera. Vive con su tía May y su tío Ben, va al instituto y le encantan las clases de ciencias. 
+                        Sin embargo, todo cambia el día que, durante una excursión del insituto a un laboratorio, ¡Peter es mordido por una araña radioactiva y se convierte en Spider-Man!
+                    </p>
+                </div>
+            </div>                        
+        </div>
+    </div>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            anchors: ['inicio', 'Anime', 'Manga', 'Comics'],
+            menu: '#menu',
+            scrollingSpeed: 1000,
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['Inicio', 'Anime', 'Portafolio', 'Comics'],
+            showActiveTooltip: true,
+            css3: true
+        });
+    </script>
+</body>
+</html>
